@@ -3,7 +3,7 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         GameProgress saveFirst = new GameProgress(54,3,44,5.6);
         GameProgress saveSecond = new GameProgress(62,2,46,3.2);
         GameProgress saveThird = new GameProgress(50,1,49,1.0);
@@ -30,7 +30,7 @@ public class Main {
         }
     }
 
-    public static void zipSave(String path, String...files) throws IOException {
+    public static void zipSave(String path, String...files) {
         try (ZipOutputStream zout = new ZipOutputStream(new FileOutputStream(path))) {
             int i = 1;
             for (String file : files) {
