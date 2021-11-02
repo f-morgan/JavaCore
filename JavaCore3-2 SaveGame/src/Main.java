@@ -32,7 +32,6 @@ public class Main {
 
     public static void zipSave(String path, String...files) {
         try (ZipOutputStream zout = new ZipOutputStream(new FileOutputStream(path))) {
-            int i = 1;
             for (String file : files) {
                 FileInputStream fis = new FileInputStream(file);
                 ZipEntry entry = new ZipEntry(file.substring(19));
