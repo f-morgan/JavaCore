@@ -12,12 +12,12 @@ public class Main {
         saveGame("F:\\Games\\savegames\\Save2.dat", saveSecond);
         saveGame("F:\\Games\\savegames\\Save3.dat", saveThird);
 
-        zipSave("F:\\Games\\savegames\\savegames.zip",
-                "F:\\Games\\savegames\\Save1.dat",
-                "F:\\Games\\savegames\\Save2.dat",
-                "F:\\Games\\savegames\\Save3.dat");
+        //zipSave("F:\\Games\\savegames\\savegames.zip",
+//                "F:\\Games\\savegames\\Save1.dat",
+//                "F:\\Games\\savegames\\Save2.dat",
+//                "F:\\Games\\savegames\\Save3.dat");
 
-        delete("F:\\Games\\savegames");
+        //delete("F:\\Games\\savegames");
 
     }
 
