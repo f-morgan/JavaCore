@@ -16,7 +16,7 @@ public class Calculator {
         } catch (ArithmeticException e) {
             System.out.println("Деление на ноль");
         }
-        return 0;
+        return Integer.MAX_VALUE;
     };
 
     UnaryOperator<Integer> pow = x -> x * x;
